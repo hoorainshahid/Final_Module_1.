@@ -1,0 +1,163 @@
+
+@import url(aanimate.css);
+
+body{
+    background-image: url(./images/bg.jfif);
+    background-repeat: no-repeat    ;
+    background-size: cover;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.btn-them{
+    background-color: rgb(165, 175, 24);
+    width: 180px;
+    height: 45px;
+    border-radius: 10px;
+    transition: 2s;
+
+}
+.btn-them:hover{
+    background-color: white;
+    color: black;
+
+}
+.container{
+    /* background-color: aquamarine; */
+    margin-top: 50px;
+
+}
+.first-child{
+    /* background-color: blueviolet; */
+    width: 50%;
+    height: 70vh;
+    padding-top: 100px;
+}
+.sec-child{
+    /* background-color: rgb(43, 226, 73); */
+    width: 50%;
+    height: 70vh;
+}
+.first-child button:hover{
+    background-color: white;
+    color: black;
+}
+.first-child button{
+        background-color: rgb(165, 175, 24);
+    width: 180px;
+    height: 45px;
+    border-radius: 10px;
+    margin-top: 50px;
+transition: 2s;
+}
+.heading{
+    margin-top: 50px;
+}
+
+@keyframes wobble {
+    0% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+
+    15% {
+        -webkit-transform: translate3d(-25%, 0, 0) rotate(-5deg);
+        transform: translate3d(-25%, 0, 0) rotate(-5deg)
+    }
+
+    30% {
+        -webkit-transform: translate3d(20%, 0, 0) rotate(3deg);
+        transform: translate3d(20%, 0, 0) rotate(3deg)
+    }
+
+    45% {
+        -webkit-transform: translate3d(-15%, 0, 0) rotate(-3deg);
+        transform: translate3d(-15%, 0, 0) rotate(-3deg)
+    }
+
+    60% {
+        -webkit-transform: translate3d(10%, 0, 0) rotate(2deg);
+        transform: translate3d(10%, 0, 0) rotate(2deg)
+    }
+
+    75% {
+        -webkit-transform: translate3d(-5%, 0, 0) rotate(-1deg);
+        transform: translate3d(-5%, 0, 0) rotate(-1deg)
+    }
+
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+@-webkit-keyframes jello {
+
+    0%,
+    11.1%,
+    to {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+
+    22.2% {
+        -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
+        transform: skewX(-12.5deg) skewY(-12.5deg)
+    }
+
+    33.3% {
+        -webkit-transform: skewX(6.25deg) skewY(6.25deg);
+        transform: skewX(6.25deg) skewY(6.25deg)
+    }
+
+    44.4% {
+        -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
+        transform: skewX(-3.125deg) skewY(-3.125deg)
+    }
+
+    55.5% {
+        -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
+        transform: skewX(1.5625deg) skewY(1.5625deg)
+    }
+
+    66.6% {
+        -webkit-transform: skewX(-.78125deg) skewY(-.78125deg);
+        transform: skewX(-.78125deg) skewY(-.78125deg)
+    }
+
+    77.7% {
+        -webkit-transform: skewX(.390625deg) skewY(.390625deg);
+        transform: skewX(.390625deg) skewY(.390625deg)
+    }
+
+    88.8% {
+        -webkit-transform: skewX(-.1953125deg) skewY(-.1953125deg);
+        transform: skewX(-.1953125deg) skewY(-.1953125deg)
+    }
+}
+
+.animate__wobble {
+    -webkit-animation-name: wobble;
+    animation-name: wobble
+}
+
+
+
+/* media */
+@media (min-width:300px) and (max-width:576px){
+    .heading{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .first-child{
+        text-align: center;
+        height: 50vh;
+    }
+    .sec-child img{
+width: 100%;
+    }
+    .sec-child{
+        height: 50vh;
+    }
+}
